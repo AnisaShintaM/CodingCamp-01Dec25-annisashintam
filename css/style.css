@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+    background: #333;
+    color: white;
+    padding: 15px 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 30px;
+    min-height: 400px;
+}
+
+#home {
+    background: #f5f5f5;
+}
+
+#our-profile {
+    background: #e8e8e8;
+}
+
+#message-us {
+    background: #f5f5f5;
+}
+
+footer {
+    text-align: center;
+}
