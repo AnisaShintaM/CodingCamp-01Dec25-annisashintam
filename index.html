@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Company Website</title>
+    <title>Company Profile | PT. XYZ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,20 +21,73 @@
         </nav>
     </header>
 
-    <section>
-
-        <h1 id="welcome-speech" class="min-h-[500px] text-center content-center">
+    <section id="home-page"
+        class="container-welcome h-screen flex flex-col items-center justify-center text-center bg-center bg-no-repeat"
+        style="background-image: url('assets/img/slider-3.png'); background-size: 100% auto;">
+            <h1 class="text-white" style="font-weight: 800;" id="welcome-speech">
             Welcome to Our Website
-            </h2>
-            <p>
+            </h1>
+            <p class="mt-2 text-white">
                 We are glad to have you here. Explore our services and offerings.
             </p>
     </section>
 
     <section id="our-profile" class="min-h-[500px] text-center content-center">
-        <h2>
-            About PT XYZ
-        </h2>
+        <h2>About PT. XYZ</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-outline card-primary shadow">
+                    <div class="card-body">
+                        <h4>Profile</h4>
+                        <p style="text-align: left;">
+                            PT. XYZ is a technology company focusing on the development and provision of integrated
+                            software services to support digital transformation across various industrial sectors.
+                            Founded with a strong commitment to delivering innovative technology solutions, PT. XYZ
+                            continues to evolve as a strategic partner for businesses seeking to enhance operational
+                            efficiency, strengthen business systems, and accelerate their digitalization process.
+                            <br><br>
+                            With a professional team experienced in software development, systems analysis, cloud
+                            technologies, and information security, PT. XYZ always prioritizes quality, reliability,
+                            and timely delivery in every project undertaken. We believe that technology is more than
+                            just a tool — it's a critical foundation for creating added value and paving the way
+                            toward a more efficient future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-outline card-primary shadow">
+                    <div class="card-body">
+                        <h4 style="text-align: center;">Vision</h4>
+                        <i style="text-align: left;">
+                            To become a leading software service provider delivering innovative, reliable, and
+                            sustainable digital solutions that
+                            accelerate technology transformation for all industry sectors.</i>
+                    </div>
+                </div>
+                <br>
+                <div class="card card-outline card-primary shadow">
+                    <div class="card-body">
+                        <h4 style="text-align: center;">Mission</h4>
+                        <ol style="text-align:left">
+                            <li>
+                                Develop innovative, reliable, and industry-relevant software solutions using
+                                cutting-edge technologies.
+                            </li>
+                            <li>
+                                Deliver excellent customer service through responsive, professional technical
+                                support focused on customer satisfaction.
+
+                            </li>
+                            <li>
+                                Drive business efficiency and productivity through the integration of user-friendly
+                                and scalable digital systems.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Portfolio Page -->
@@ -41,16 +95,116 @@
         <h2>
             Our Portofolio
         </h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/porto1.jpg" height="300" class="card-img-top" alt="Project 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">E-Procurement Systems</h5>
+                        <p class="card-text">
+                            An e-procurement system is a system used to manage procurement processes more effectively and efficiently.
+                            The procurement process, from request to execution, is carried out systematically.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/porto2.jpg" height="300" class="card-img-top" alt="Project 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Knowledge Management Systems</h5>
+                        <p class="card-text">
+                           This system makes it easier for companies to organize each employee's knowledge,
+                           thereby creating sustainable knowledge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/porto3.jpg" height="300" class="card-img-top" alt="Project 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Employee Relationship Systems</h5>
+                        <p class="card-text">
+                            Employee communication becomes easier and more organized with this system, which is designed to facilitate the distribution
+                            of information and ensure it is well received by employees.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="message-us" class="min-h-[500px] text-center content-center">
-        <h2>
-            Message Us
-        </h2>
+    <section id="message-us" class="min-h-[500px]">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="heading">
+                    <h2>Leave a Message</h2>
+                    <p class="sub-heading block">We are here to provide you with more information, answer any questions
+                        you may have.</p>
+                </div>
+
+                <form method="post">
+                    <div class="form-input mb-3">
+                        <input name="input[name]" id="name" type="text" placeholder="Name" class="form-control w-100">
+                    </div>
+
+                    <div class="form-input mb-3">
+                        <input name="input[email]" id="email" type="text" placeholder="Email"
+                            class="form-control w-100">
+                    </div>
+
+                    <div class="form-input mb-3">
+                        <input name="input[subject]" id="subject" type="text" placeholder="Subject"
+                            class="form-control w-100">
+                    </div>
+
+                    <div class="form-input mb-3">
+                        <input name="input[phone]" id="phone" type="text" placeholder="Phone Number"
+                            class="form-control w-100">
+                    </div>
+
+                    <div class="form-input mb-3">
+                        <textarea name="input[message]" placeholder="Message" class="form-control w-100"
+                            rows="5"></textarea>
+                    </div>
+
+                    <div class="form-input mb-3">
+                        <button type="button" id="btn-submit" class="btn btn-primary w-100">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="heading">
+                        <h2>Find Us</h2>
+                    </div>
+                    <div style="height: 320px; width: 100%;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3475261438534!2d106.81630357355424!3d-6.2178192608972385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e4734a8de3%3A0xb2ad7eacc88d7f3e!2sRevoU!5e0!3m2!1sid!2sid!4v1764904854473!5m2!1sid!2sid"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card card-outline card-primary shadow">
+                        <div class="card-body px-2">
+                            <h4>Your Data Submitted </h4>
+                            <p>Name: <span id="value-name"></span></p>
+                            <p>Email: <span id="value-email"></span></p>
+                            <p>Subject: <span id="value-subject"></span></p>
+                            <p>Phone: <span id="value-phone"></span></p>
+                            <p>Message: <span id="value-message"></span></p>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 My Company. All Rights Reserved.</p>
+        <p>Copyright &copy; 2025 PT. XYZ. All Rights Reserved.</p>
     </footer>
     <script src="js/script.js"></script>
 </body>
