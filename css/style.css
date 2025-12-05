@@ -61,6 +61,12 @@ section h2 {
     font-size:22px
 }
 
+.card-title {
+    color:#7cc0c9;
+    font-weight:700;
+    font-size:22px
+}
+
 #home {
     background: #f5f5f5;
 }
