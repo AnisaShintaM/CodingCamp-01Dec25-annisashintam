@@ -6,6 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Company Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,20 +21,73 @@
         </nav>
     </header>
 
-    <section>
-
-        <h1 id="welcome-speech" class="min-h-[500px] text-center content-center">
+    <section id="home-page"
+        class="container-welcome h-screen flex flex-col items-center justify-center text-center bg-center bg-no-repeat"
+        style="background-image: url('assets/img/slider-3.png'); background-size: 100% auto;">
+            <h1 class="text-white" style="font-weight: 800;" id="welcome-speech">
             Welcome to Our Website
-            </h2>
-            <p>
+            </h1>
+            <p class="mt-2 text-white">
                 We are glad to have you here. Explore our services and offerings.
             </p>
     </section>
 
     <section id="our-profile" class="min-h-[500px] text-center content-center">
-        <h2>
-            About PT XYZ
-        </h2>
+        <h2>About PT XYZ</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-outline card-primary shadow">
+                    <div class="card-body">
+                        <h4>Profile</h4>
+                        <p style="text-align: left;">
+                            PT. XYZ is a technology company focusing on the development and provision of integrated
+                            software services to support digital transformation across various industrial sectors.
+                            Founded with a strong commitment to delivering innovative technology solutions, PT. XYZ
+                            continues to evolve as a strategic partner for businesses seeking to enhance operational
+                            efficiency, strengthen business systems, and accelerate their digitalization process.
+                            <br><br>
+                            With a professional team experienced in software development, systems analysis, cloud
+                            technologies, and information security, PT. XYZ always prioritizes quality, reliability,
+                            and timely delivery in every project undertaken. We believe that technology is more than
+                            just a tool — it's a critical foundation for creating added value and paving the way
+                            toward a more efficient future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-outline card-primary shadow">
+                    <div class="card-body">
+                        <h4 style="text-align: center;">Vision</h4>
+                        <i style="text-align: left;">
+                            To become a leading software service provider delivering innovative, reliable, and
+                            sustainable digital solutions that
+                            accelerate technology transformation for all industry sectors.</i>
+                    </div>
+                </div>
+                <br>
+                <div class="card card-outline card-primary shadow">
+                    <div class="card-body">
+                        <h4 style="text-align: center;">Mission</h4>
+                        <ol style="text-align:left">
+                            <li>
+                                Develop innovative, reliable, and industry-relevant software solutions using
+                                cutting-edge technologies.
+                            </li>
+                            <li>
+                                Deliver excellent customer service through responsive, professional technical
+                                support focused on customer satisfaction.
+
+                            </li>
+                            <li>
+                                Drive business efficiency and productivity through the integration of user-friendly
+                                and scalable digital systems.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Portfolio Page -->
